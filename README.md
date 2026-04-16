@@ -1,2 +1,17 @@
 # formalchain
-formalchain
+(* ================================================================== *)
+(*  FormalChain — Coq Formalisation                                    *)
+(*  Machine-Checkable Chain-of-Custody with Formally Verified          *)
+(*  State Transitions and Provable Unlinkability Guarantees            *)
+(*                                                                      *)
+(*  Coq version : 8.20.1                                               *)
+(*  Compile with: coqc formalchain.v                                   *)
+(*                                                                      *)
+(*  This file contains:                                                 *)
+(*    1. Type definitions  (States, Actors, Permissions, Actions)      *)
+(*    2. Evidence record and system state                               *)
+(*    3. ValidTransition — the 7-rule transition predicate             *)
+(*    4. Seven mechanically verified invariants                        *)
+(*    5. A decision procedure (transitionMatrix) extracted to          *)
+(*       the on-chain verifier                                         *)
+(* ====================================
